@@ -1,5 +1,5 @@
 public with sharing class PartProductSyncScheduler implements Schedulable {
-
+    /* this is the Scheduler class and from this only admin and the User who having the Permission Set can execute the Code*/
     public void execute(SchedulableContext sc) {
 
         if (!isAuthorizedUser()) {
